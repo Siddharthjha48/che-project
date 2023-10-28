@@ -5,8 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainwater Harvesting</title>
     <link rel="stylesheet" href="web.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"></head>
+    <title>Document</title>
+    <style media="screen">
+      
+  
+
+  
+  
+  
+     hr {
+       width:50px;
+       border-color: transparent;
+       border-right-color: rgba(255, 255, 255, 0.7);
+       border-right-width: 50px;
+       position: absolute;
+       bottom: 100%;
+       transform-origin: 100% 100%;
+       animation-name: rain;
+       animation-duration: 1s;
+       animation-timing-function: linear;
+       animation-iteration-count: infinite;
+     }
+  
+     @keyframes rain {
+       from {
+         transform: rotate(105deg) translateX(0);
+       } 
+       to {
+         transform: rotate(105deg) translateX(calc(100vh + 20px));
+       }
+     }
+  
+  
+    </style>
+  
+  
+    <body>
+  
+  </body>
+  <script type="text/javascript">
+  
+    let hrElement;
+    let counter = 100;
+    for (let i = 0; i < counter; i++) {
+      hrElement = document.createElement("HR");
+      
+        hrElement.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+        hrElement.style.animationDuration = 0.2 + Math.random() * 0.3 + "s";
+        hrElement.style.animationDelay = Math.random() * 5 + "s";
+     
+      document.body.appendChild(hrElement);
+    }
+  
    
-</head>
+  
+  </script>
+  
+  
+
 <body>    <div class="header">
        <h1>Rainwater Harvesting</h1>
    </div>
@@ -80,5 +137,5 @@ Ensure proper connection between the collection system and storage container: On
 Monitor the rainwater storage container: It is recommended that you monitor your rainwater storage container regularly to ensure that it is functioning properly and that the stored rainwater is being used effectively. This may involve checking the container for leaks, monitoring the water level, and occasionally performing a visual inspection to ensure that there are no signs of algae growth or other potential issues.
 By following these steps, you can successfully implement a rainwater harvesting and storage system that not only contributes to your home's aesthetic appeal but also provides a valuable source of clean, sustainable water.
 
-
+</html>
           
