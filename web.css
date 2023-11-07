@@ -244,6 +244,10 @@ dfn{
   margin-bottom:40px;
  }
 
+ a:hover{
+  color: chocolate;
+ }
+
  .wwe{
   font-size: xx-large;
   text-align: center;
@@ -257,7 +261,7 @@ dfn{
   border-top-color: rgb(128, 47, 0); 
   display:flex;
   justify-content: flex-end;
-  margin-right: 15px;
+  margin-right: 25px;
  }
 
 .grid ,grids ,p:hover{
